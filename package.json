@@ -8,5 +8,9 @@
     "mongodb"
   ],
   "author": "Rupesh Garhwal <rupeshgarhwal3920@gmail.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rg-rupeee/inmongo-cache"
+  }
 }
