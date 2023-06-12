@@ -36,15 +36,16 @@ const exists = async (key) => {
   return await service.exists(Model, key);
 };
 
-const get = async (key, { raw = true }) => {
+const get = async (key, options) => {
   if (!Model) throw new Error('Cache Model needs to be initialized');
 
   const doc = await service.get(Model, key);
 
-  return raw ? doc._value : doc;
+  return options?.raw ? doc._value : doc;
 };
 
 module.exports = {
+  default: initialize,
   initialize,
   add,
   remove,
