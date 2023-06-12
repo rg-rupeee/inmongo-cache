@@ -34,6 +34,7 @@ const exists = async (key) => {
   return await service.exists(Model, key);
 };
 
+export default initialize;
 module.exports = {
   initialize,
   add,
