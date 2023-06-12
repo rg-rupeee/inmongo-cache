@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "description": "caching data in mongodb itself",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "cache",
     "mongodb"
   ],
-  "author": "Rupesh Garhwal",
+  "author": "Rupesh Garhwal <rupeshgarhwal3920@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "mongoose": "7.2.3"

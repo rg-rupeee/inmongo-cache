@@ -1,9 +1,4 @@
-const mongoose = require('mongoose');
-const schema = require('./schema');
-
-const Model = mongoose.model(schema, 'Cache');
-
-const add = async (key, value, expiresAt) => {
+const add = async (Model, key, value, expiresAt) => {
   const doc = Model.findOneAndUpdate(
     { _key: key },
     { _key: key, _value: value, _expiresAt: expiresAt },
@@ -12,12 +7,12 @@ const add = async (key, value, expiresAt) => {
   return doc;
 };
 
-const remove = async (key) => {
+const remove = async (Model, key) => {
   const doc = Model.findOneAndDelete({ _key: key });
   return doc;
 };
 
-const exists = async (key) => {
+const exists = async (Model, key) => {
   const doc = Model.findOne({ _key: key });
   return doc && Object.keys(doc) !== 0;
 };
