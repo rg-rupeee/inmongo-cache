@@ -17,8 +17,14 @@ const exists = async (Model, key) => {
   return doc && Object.keys(doc) !== 0;
 };
 
+const get = async (Model, key) => {
+  const doc = Model.findOne({ _key: key });
+  return doc;
+};
+
 module.exports = {
   add,
   remove,
   exists,
+  get,
 };

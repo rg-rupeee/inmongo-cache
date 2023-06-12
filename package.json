@@ -8,8 +8,5 @@
     "mongodb"
   ],
   "author": "Rupesh Garhwal <rupeshgarhwal3920@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "mongoose": "7.2.3"
-  }
+  "license": "ISC"
 }
