@@ -31,7 +31,7 @@ const remove = async (key) => {
 };
 
 const exists = async (key) => {
-  if (!Model) throw new Error('Cache Model0 needs to be initialized');
+  if (!Model) throw new Error('Cache Model needs to be initialized');
 
   return await service.exists(Model, key);
 };
