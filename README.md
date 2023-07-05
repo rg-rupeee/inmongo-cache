@@ -10,11 +10,11 @@ This NPM package provides a caching solution for storing and retrieving data in 
 To install the package, you can use npm or yarn:
 
 ```shell
-npm install inmongo-cahce
+npm install inmongo-cache
 ```
 or
 ```shell
-yarn add inmongo-cahce
+yarn add inmongo-cache
 ```
 
 ## Usage
